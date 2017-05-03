@@ -14,7 +14,7 @@ module.exports = {
   devtool: "cheap-module-source-map",
 
   entry: {
-    widgets: ["babel-polyfill", "./src/widgets"]
+    widgets: "./src/widgets"
   },
 
   resolve: {

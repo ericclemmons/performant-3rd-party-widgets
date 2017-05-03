@@ -4,6 +4,11 @@
       "id": ["lodash", "recompose"]
     }],
     "syntax-dynamic-import",
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true
+    }],
     "transform-object-rest-spread"
   ],
   "presets": [
