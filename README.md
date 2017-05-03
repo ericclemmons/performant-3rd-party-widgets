@@ -16,12 +16,23 @@ Why?
 - [ ] Chrome DevTools
 - [ ] `webpack-bundle-analyzer`
 - [ ] GZip Plugin
+- [ ] https://chrisbateman.github.io/webpack-visualizer/
+- [ ] https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579
 
 ### Building
 - [ ] NODE_ENV=production + UglifyJS
 - [ ] External Sourcemaps
 - [ ] Code-splitting
   - [ ] `modules: false`
+- [ ] `compression-webpack-plugin`
+
+    ```js
+    var CompressionPlugin = require('compression-webpack-plugin');
+
+    new CompressionPlugin({
+      test: /\.(html|js)$/,
+    })
+    ```
 
 ### Bundle optimization
 - [ ] `react` to `preact`
