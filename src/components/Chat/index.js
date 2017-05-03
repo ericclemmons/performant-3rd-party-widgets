@@ -22,17 +22,17 @@ const enhance = compose(
     sendMessage: ({ history, setHistory }) => event => {
       event.preventDefault();
 
-      const input = event.target["body"];
+      const { value } = event.target["body"];
 
       setHistory(
         history.concat({
           key: `to-${+new Date()}`,
           to: "Agent",
-          body: input.value
+          body: value
         }, {
           key: `from-${+new Date()}`,
           from: "Agent",
-          body: input.value.split("").reverse().join("")
+          body: value.split("").reverse().join("")
         })
       );
 
