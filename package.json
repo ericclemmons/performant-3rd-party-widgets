@@ -10,6 +10,8 @@
     "color": "^1.0.3",
     "compression-webpack-plugin": "^0.4.0",
     "core-js": "^2.4.1",
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -20,9 +22,11 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack -p",
+    "dev": "webpack-dev-server",
     "preprofile": "mkdir -p build; NODE_ENV=production webpack --json -p --profile --progress --sort-modules-by size --sort-chunks-by size --sort-assets-by size > build/stats.json",
+    "prestart": "npm run build",
     "profile": "webpack-bundle-analyzer build/stats.json",
-    "start": "webpack-dev-server"
+    "start": "NODE_ENV=production node server"
   },
   "devDependencies": {
     "webpack-bundle-analyzer": "^2.4.0"
