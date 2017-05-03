@@ -1,6 +1,11 @@
 import { camelCase } from "lodash";
 
 (async () => {
+  // Load polyfills for users without even the basics
+  if (typeof Promise === "undefined") {
+    await import("../polyfills");
+  }
+
   const containers = [...document.querySelectorAll("[data-my-widget]")];
 
   for (const container of containers) {
