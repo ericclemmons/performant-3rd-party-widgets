@@ -17,8 +17,8 @@ const Input = styled.input`
   width: 100%;
 `;
 
-export default ({ onSubmit }) => (
-  <Form onSubmit={onSubmit}>
+export default (props) => (
+  <Form onSubmit={props.onSubmit}>
     <Input name="body" placeholder="Press [enter] to send..." type="text" />
   </Form>
 );
