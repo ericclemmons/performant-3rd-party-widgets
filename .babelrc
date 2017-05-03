@@ -1,5 +1,8 @@
 {
   "plugins": [
+    ["lodash", {
+      "id": ["lodash", "recompose"]
+    }],
     "syntax-dynamic-import",
     "transform-object-rest-spread"
   ],
