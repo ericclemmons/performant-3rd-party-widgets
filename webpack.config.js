@@ -1,3 +1,4 @@
+var CompressionPlugin = require("compression-webpack-plugin");
 var path = require("path");
 var webpack = require("webpack");
 
@@ -36,5 +37,11 @@ module.exports = {
     devtoolModuleFilenameTemplate: "[absolute-resource-path]",
     filename: "[name].js",
     path: path.resolve("./build")
-  }
+  },
+
+  plugins: [
+    new CompressionPlugin({
+      test: /\.(html|js)$/
+    })
+  ]
 };
