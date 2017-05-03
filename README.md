@@ -53,3 +53,4 @@ Why?
 - [ ] Multiple instances
 - [ ] `__webpack_public_path__`
 - [ ] `loose: true` breaks with [...NodeList]
+- [ ] https://github.com/lodash/lodash-webpack-plugin requires extreme testing
