@@ -1,9 +1,3 @@
-// Lazy-loaded modules are assumed on the hosting domain,
-// so we override the constant at runtime.
-// __webpack_public_path__ = process.env.NODE_ENV === "production"
-//   ? "https://example.com"
-//   : "http://localhost:3000";
-
 import { camelCase } from "lodash";
 
 (async () => {
