@@ -1,5 +1,4 @@
 import { camelCase } from "lodash";
-import("../polyfills");
 import chat from "./chat";
 import hello from "./hello";
 
