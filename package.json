@@ -13,6 +13,8 @@
     "hapi": "^16.1.1",
     "inert": "^4.2.0",
     "isomorphic-fetch": "^2.2.1",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "recompose": "^0.23.1",
