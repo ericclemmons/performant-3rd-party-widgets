@@ -19,6 +19,11 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack -p",
+    "preprofile": "mkdir -p build; NODE_ENV=production webpack --json -p --profile --progress --sort-modules-by size --sort-chunks-by size --sort-assets-by size > build/stats.json",
+    "profile": "webpack-bundle-analyzer build/stats.json",
     "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^2.4.0"
   }
 }
