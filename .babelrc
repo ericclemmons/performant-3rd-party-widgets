@@ -8,8 +8,7 @@
       "env",
       {
         "targets": {
-          "browsers": "last 2 versions",
-          "node": "current"
+          "browsers": "last 2 versions"
         },
         "useBuiltIns": true
       }
