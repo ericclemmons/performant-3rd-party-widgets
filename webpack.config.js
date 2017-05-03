@@ -16,10 +16,10 @@ module.exports = {
   entry: {
     widgets: ["babel-polyfill", "./src/widgets"]
   },
-  
-  "resolve": {
-    "alias": {
-      "react": "preact-compat",
+
+  resolve: {
+    alias: {
+      react: "preact-compat",
       "react-dom": "preact-compat"
     }
   },
