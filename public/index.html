@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Performant 3rd Party Widgets</title>
+  <style>
+    html,
+    body,
+    iframe {
+      border: 0;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+    Pretend to be part of the React website instead of including
+    a bunch of example markup.
+  -->
+  <iframe src="https://facebook.github.io/react/"></iframe>
+
+  <div
+    data-my-widget="chat"
+    data-accent-color="#61dafb"
+    data-button-color="#cc7a6f"
+  ><script async defer src="/widgets.js"></script></div>
+</body>
+
+</html>

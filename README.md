@@ -1,2 +1,7 @@
-# performant-3rd-party-widgets
-https://www.meetup.com/houston-js/events/239147131/
+# Performant 3rd Party Widgets
+
+> https://www.meetup.com/houston-js/events/239147131/
+
+## Demo
+
+![Demo](demo.gif)
