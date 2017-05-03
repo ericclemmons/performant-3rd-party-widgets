@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 const List = styled.ol`
   border-radius: 5px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) inset;
   box-sizing: border-box;
   display: block;
   height: calc(100% - 40px);
@@ -17,7 +16,7 @@ const List = styled.ol`
 
 const Message = styled.li`
   background: ${props => props.from ? "#ccc" : props.accentColor};
-  border-radius: 10px;
+  border-radius: 3px;
   clear: both;
   display: block;
   float: ${props => props.from ? "left" : "right"};
