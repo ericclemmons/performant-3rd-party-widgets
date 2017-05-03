@@ -19,6 +19,7 @@
     "preact-compat": "^3.16.0",
     "recompose": "^0.23.1",
     "styled-components": "^1.4.6",
+    "styled-jsx": "^0.5.7",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.5"
   },
