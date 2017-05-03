@@ -37,10 +37,10 @@ Why?
     ```
 
 ### Bundle optimization
-- [ ] `react` to `preact`
-- [ ] `babel-lodash`
-  - [ ] Applies to `recompose`, too.
-- [ ] `lodash-webpack-plugin`
+- [x] `react` to `preact`
+- [x] `babel-lodash`
+  - [x] Applies to `recompose`, too.
+- [ ] ~~`lodash-webpack-plugin`~~
 
 ### CSS-in-JS
 - [ ] Example for when styles are generated at runtime
@@ -54,3 +54,4 @@ Why?
 - [ ] `__webpack_public_path__`
 - [ ] `loose: true` breaks with [...NodeList]
 - [ ] https://github.com/lodash/lodash-webpack-plugin requires extreme testing
+- [ ] https://github.com/zloirock/core-js
