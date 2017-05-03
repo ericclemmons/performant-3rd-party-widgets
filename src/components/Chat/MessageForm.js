@@ -19,6 +19,6 @@ const Input = styled.input`
 
 export default (props) => (
   <Form autoComplete="off" onSubmit={props.onSubmit}>
-    <Input name="body" placeholder="Press [enter] to send..." type="text" />
+    <Input autoFocus name="body" placeholder="Press [enter] to send..." type="text" />
   </Form>
 );
