@@ -2,6 +2,9 @@
 
 > https://www.meetup.com/houston-js/events/239147131/
 
+Why?
+> https://twitter.com/addyosmani/status/846146626389389312
+
 ## Demo
 
 ![Demo](demo.gif)
