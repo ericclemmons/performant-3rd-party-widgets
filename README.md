@@ -15,6 +15,8 @@ Why?
 
 - [ ] Chrome DevTools
 - [ ] `webpack-bundle-analyzer`
+  > https://github.com/th0r/webpack-bundle-analyzer
+
 - [ ] GZip Plugin
 - [ ] https://chrisbateman.github.io/webpack-visualizer/
 - [ ] https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579

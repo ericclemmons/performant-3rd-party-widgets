@@ -1,3 +1,4 @@
+var CompressionPlugin = require("compression-webpack-plugin");
 var path = require("path");
 var webpack = require("webpack");
 
@@ -24,21 +25,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            cacheDirectory: true,
-            plugins: [
-              "syntax-dynamic-import",
-              "transform-object-rest-spread"
-            ],
-            presets: [
-              [
-                "env",
-                {
-                  targets: { browsers: "last 2 versions", node: "current" },
-                  useBuiltIns: true
-                }
-              ],
-              "react"
-            ]
+            cacheDirectory: true
           }
         }
       }
@@ -53,11 +40,8 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.NamedModulesPlugin(),
-    new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV || "development")
-      }
+    new CompressionPlugin({
+      test: /\.(html|js)$/
     })
   ]
 };
