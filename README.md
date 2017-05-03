@@ -21,6 +21,7 @@ Why?
 - [ ] NODE_ENV=production + UglifyJS
 - [ ] External Sourcemaps
 - [ ] Code-splitting
+  - [ ] `modules: false`
 
 ### Bundle optimization
 - [ ] `react` to `preact`
