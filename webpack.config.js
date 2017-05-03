@@ -24,21 +24,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            cacheDirectory: true,
-            plugins: [
-              "syntax-dynamic-import",
-              "transform-object-rest-spread"
-            ],
-            presets: [
-              [
-                "env",
-                {
-                  targets: { browsers: "last 2 versions", node: "current" },
-                  useBuiltIns: true
-                }
-              ],
-              "react"
-            ]
+            cacheDirectory: true
           }
         }
       }
