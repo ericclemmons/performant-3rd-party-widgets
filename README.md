@@ -8,14 +8,21 @@
 
 ## Features
 
+## Tools
+
+- [ ] Chrome DevTools
+- [ ] `webpack-bundle-analyzer`
+- [ ] GZip Plugin
+
 ### Building
-- [ ] Webpack
+- [ ] NODE_ENV=production + UglifyJS
+- [ ] External Sourcemaps
 - [ ] Code-splitting
-- [ ] Offline-support?
 
 ### Bundle optimization
-- [ ] `webpack-bundle-analyzer`
 - [ ] `react` to `preact`
+- [ ] `babel-lodash`
+  - [ ] Applies to `recompose`, too.
 - [ ] `lodash-webpack-plugin`
 
 ### CSS-in-JS
@@ -27,4 +34,5 @@
 ### Gotchas
 - [ ] CSS specificity
 - [ ] Multiple instances
-- [ ] What else?
+- [ ] `__webpack_public_path__`
+- [ ] `loose: true` breaks with [...NodeList]
