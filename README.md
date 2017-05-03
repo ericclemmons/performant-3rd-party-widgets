@@ -14,19 +14,19 @@ Why?
 ## Tools
 
 - [ ] Chrome DevTools
-- [ ] `webpack-bundle-analyzer`
+- [x] `webpack-bundle-analyzer`
   > https://github.com/th0r/webpack-bundle-analyzer
 
-- [ ] GZip Plugin
-- [ ] https://chrisbateman.github.io/webpack-visualizer/
-- [ ] https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579
+- [x] GZip Plugin
+- [x] https://chrisbateman.github.io/webpack-visualizer/
+- [x] https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579
 
 ### Building
-- [ ] NODE_ENV=production + UglifyJS
-- [ ] External Sourcemaps
+- [x] NODE_ENV=production + UglifyJS
+- [x] External Sourcemaps
 - [ ] Code-splitting
   - [ ] `modules: false`
-- [ ] `compression-webpack-plugin`
+- [x] `compression-webpack-plugin`
 
     ```js
     var CompressionPlugin = require('compression-webpack-plugin');
