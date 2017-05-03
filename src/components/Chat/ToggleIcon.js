@@ -1,6 +1,7 @@
 import color from "color";
 import React from "react";
 
+// http://www.fileformat.info/info/unicode/char/1f5ea/index.htm
 export default function Icon({ accentColor, height, onClick, width }) {
   const fill = color(accentColor).luminosity() > 0.6 ? "#222" : "white";
 
