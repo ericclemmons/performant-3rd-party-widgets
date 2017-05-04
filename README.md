@@ -12,4 +12,8 @@ See all that's necessary:
 
 ![Demo](demo.gif)
 
----
+> https://performant-3rd-party-widgets-owaihbmhfl.now.sh/
+
+## Slides
+
+> https://www.slideshare.net/ericclemmons/slides-75659204
