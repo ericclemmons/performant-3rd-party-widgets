@@ -1,15 +1,25 @@
 {
   "plugins": [
-    ["lodash", {
-      "id": ["lodash", "recompose"]
-    }],
+    [
+      "lodash",
+      {
+        "id": [
+          "lodash",
+          "recompose"
+        ]
+      }
+    ],
     "syntax-dynamic-import",
-    ["transform-runtime", {
-      "helpers": false,
-      "polyfill": false,
-      "regenerator": true
-    }],
-    "transform-object-rest-spread"
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    "transform-object-rest-spread",
+    "styled-jsx/babel"
   ],
   "presets": [
     [

@@ -1,39 +1,65 @@
 import React, { Component } from "react";
 import { findDOMNode } from "react-dom";
-import styled from "styled-components";
 
-const List = styled.ol`
-  border-radius: 5px;
-  box-sizing: border-box;
-  display: block;
-  height: calc(100% - 40px);
-  list-style-type: none;
-  margin: 0;
-  overflow: auto;
-  padding: 10px 5px 10px 5px;
-  width: 100%;
-`;
+const List = (props) => (
+  <ol 
+    className="root"
+  >
+    {props.children}
+    <style jsx>{`
+      .root {
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: block;
+        height: calc(100% - 40px);
+        list-style-type: none;
+        margin: 0;
+        overflow: auto;
+        padding: 10px 5px 10px 5px;
+        width: 100%;
+      }
+    `}</style>
+  </ol>
+);
 
-const Message = styled.li`
-  background: ${props => props.from ? "#ccc" : props.accentColor};
-  border-radius: 3px;
-  clear: both;
-  display: block;
-  float: ${props => props.from ? "left" : "right"};
-  font-size: 13px;
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  position: relative;
-  text-align: ${props => (props.from ? "left" : "right")}
-`;
+const Message = (props) => (
+  <li 
+    className="root"
+    style={{
+      background: props.from ? "#ccc" : props.accentColor,
+      float: props.from ? "left" : "right",
+      textAlign: props.from ? "left" : "right"
+    }}
+  >
+    {props.children}
+    <style jsx>{`
+      .root {
+        border-radius: 3px;
+        clear: both;
+        display: block;
+        font-size: 13px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        position: relative;
+      }
+    `}</style>
+  </li>
+);
 
-const Author = styled.small`
-  bottom: -15px;
-  display: block;
-  font-size: 60%;
-  opacity: 0.6;
-  position: absolute;
-`;
+const Author = (props) => (
+  <small className="root">
+    {props.children}
+    <style jsx>{`
+      .root {
+        bottom: -15px;
+        display: block;
+        font-size: 60%;
+        opacity: 0.6;
+        position: absolute;
+      }
+    `}</style>
+  </small>
+);
 
 export default class Messages extends Component {
   componentDidUpdate() {
