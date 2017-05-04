@@ -1,4 +1,5 @@
 {
+  "name": "performant-3rd-party-widgets",
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
