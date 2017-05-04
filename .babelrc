@@ -1,6 +1,14 @@
 {
   "plugins": [
+    ["lodash", {
+      "id": ["lodash", "recompose"]
+    }],
     "syntax-dynamic-import",
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true
+    }],
     "transform-object-rest-spread"
   ],
   "presets": [
@@ -8,9 +16,9 @@
       "env",
       {
         "targets": {
-          "browsers": "last 2 versions",
-          "node": "current"
+          "browsers": "last 2 versions"
         },
+        "modules": false,
         "useBuiltIns": true
       }
     ],
