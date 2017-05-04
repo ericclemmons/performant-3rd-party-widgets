@@ -20,18 +20,17 @@
     "preact-compat": "^3.16.0",
     "recompose": "^0.23.1",
     "styled-components": "^1.4.6",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack": "^2.4.1"
   },
   "scripts": {
     "build": "NODE_ENV=production webpack -p",
     "dev": "webpack-dev-server",
     "preprofile": "mkdir -p build; NODE_ENV=production webpack --json -p --profile --progress --sort-modules-by size --sort-chunks-by size --sort-assets-by size > build/stats.json",
-    "prestart": "npm run build",
     "profile": "webpack-bundle-analyzer build/stats.json",
     "start": "NODE_ENV=production node server"
   },
   "devDependencies": {
-    "webpack-bundle-analyzer": "^2.4.0"
+    "webpack-bundle-analyzer": "^2.4.0",
+    "webpack-dev-server": "^2.4.5"
   }
 }
