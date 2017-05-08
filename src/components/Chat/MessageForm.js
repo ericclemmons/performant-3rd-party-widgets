@@ -1,24 +1,26 @@
 import React from "react";
-import styled from "styled-components";
+import css from "glam";
 
-const Form = styled.form`
-  height: 40px;
-  padding: 5px;
-`;
+export default (props) => {
+  const form = css`
+    height: 40px;
+    padding: 5px;
+  `;
 
-const Input = styled.input`
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-  font-size: 13px;
-  height: 30px;
-  text-align: right;
-  padding: 0 5px 0 0;
-  width: 100%;
-`;
-
-export default (props) => (
-  <Form autoComplete="off" onSubmit={props.onSubmit}>
-    <Input autoFocus name="body" placeholder="Press [enter] to send..." type="text" />
-  </Form>
-);
+  const input = css`
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    font-size: 13px;
+    height: 30px;
+    text-align: right;
+    padding: 0 5px 0 0;
+    width: 100%;
+  `;
+  
+  return (
+    <form className={form} autoComplete="off" onSubmit={props.onSubmit}>
+      <input className={input} autoFocus name="body" placeholder="Press [enter] to send..." type="text" />
+    </form>
+  );
+};
