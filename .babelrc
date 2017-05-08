@@ -1,15 +1,31 @@
 {
   "plugins": [
-    ["lodash", {
-      "id": ["lodash", "recompose"]
-    }],
+    [
+      "lodash",
+      {
+        "id": [
+          "lodash",
+          "recompose"
+        ]
+      }
+    ],
     "syntax-dynamic-import",
-    ["transform-runtime", {
-      "helpers": false,
-      "polyfill": false,
-      "regenerator": true
-    }],
-    "transform-object-rest-spread"
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    "transform-object-rest-spread",
+    [
+      "glam/babel.js",
+      {
+        "sync": false,
+        "inline": true
+      }
+    ]
   ],
   "presets": [
     [

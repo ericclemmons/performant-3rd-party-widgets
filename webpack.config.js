@@ -35,6 +35,12 @@ module.exports = {
             cacheDirectory: true
           }
         }
+      },
+      { 
+        test: /\.css$/,
+        use: {
+          loader: "glam/loader"
+        }
       }
     ]
   },
