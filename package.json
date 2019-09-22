@@ -30,7 +30,7 @@
     "start": "NODE_ENV=production node server"
   },
   "devDependencies": {
-    "webpack-bundle-analyzer": "^2.4.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-dev-server": "^2.4.5"
   }
 }
